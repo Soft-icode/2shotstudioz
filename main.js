@@ -1,4 +1,4 @@
-import '/style.css';
+import './style.css';
 
 const swiper = new Swiper('.swiper', {
   autoplay: {
