@@ -1,4 +1,4 @@
-import './style.css';
+import '/style.css';
 
 const swiper = new Swiper('.swiper', {
   autoplay: {
@@ -34,3 +34,17 @@ document.addEventListener('scroll', () => {
     navigationBar.classList.remove('scrolled');
   }
 });
+
+const typed = document.querySelector('.typed');
+     
+if(typed) {
+  let typed_strings = typed.getAttribute('data-typed-items');
+  typed_strings = typed_strings.split(',');
+ new Typed('.typed', {
+  strings: typed_strings,
+  loop: true,
+  typespeed: 50,
+  backspeed: 50,
+  backDelay: 2000,
+ });
+};
